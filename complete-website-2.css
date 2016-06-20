@@ -1,0 +1,141 @@
+html {
+	color: #444;
+}
+/*navbar*/
+.navbar {
+	position: fixed;
+	box-shadow: 0 1.5px 1px #666;
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+}
+
+.navbar a {
+	float: right;
+	padding: 20px;
+	font-size: 25px;
+	color: inherit;
+	transition: color 1s;
+}
+
+.navbar a:hover {
+	color: #bbb;
+}
+
+.navbar .logo {
+	width: 65px;
+	height: 65px;
+	margin: 10px;
+	border-radius: 100%;
+	float: left;
+	background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p160x160/10985264_388817271305114_4162203105879907235_n.jpg?oh=eacf06bd2be1767e2ffc7d01e5f08281&oe=57C27477');
+	background-size: cover;
+}
+/*navbar~*/
+/*banner*/
+.banner {
+	min-height: 650px;
+	box-shadow: 0 1.5px 1px #666;
+	background-color: lightcoral;
+	text-align: center;
+	color: #fff;
+}
+
+.banner .title {
+	padding: 200px 0 25px 0;
+	font-weight: 900;
+	font-size: 150px;
+}
+
+.banner .kicker {
+	font-size: 30px;
+	font-weight: 100;
+}
+/*banner~*/
+/*about*/
+.about {
+	min-height: 900px;
+	text-align: center;
+}
+
+.self-portrait {
+	background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p160x160/10985264_388817271305114_4162203105879907235_n.jpg?oh=eacf06bd2be1767e2ffc7d01e5f08281&oe=57C27477');
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+.about p {
+	font-size: 25px;
+	text-align: justify;
+	width: 350px;
+	display: inline-block;
+	padding: 50px;
+}
+
+.about p:nth-child(4){
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+/*about~*/
+/*testimonials*/
+.testimonials-master-container {
+	border: 1px solid #999;
+	background-color: lightblue;
+	height: 800px;
+}
+.testimonials-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.testimonails-title {
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 50px;
+}
+
+.change-testimonial {	
+	margin-top: 150px;
+	position: absolute;
+	font-size: 100px;
+}
+
+.change-testimonial:hover {
+	cursor: pointer;
+}
+
+.change-testimonial.right {
+	right: 0;
+}
+
+.testomonial-info-container {
+	text-align: center;
+}
+
+.container-2, .container-3 {
+	display: none;
+}
+
+.testimonial-face {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	background-size: cover;
+}
+
+.face-1 {
+	background-image: url('http://static1.squarespace.com/static/521cd626e4b07a1dcabda4a2/529a3fb3e4b00e96518f094e/5396b735e4b08d90c13385d5/1461638545775/Nia+HS-132.jpg?format=750w');
+}
+
+.face-2 {
+	background-image: url('http://static.wixstatic.com/media/7b5571_1e64fcf4caf749b9bc2c54577f743edd.jpg/v1/fill/w_284,h_382,al_c,q_80,usm_0.66_1.00_0.01/7b5571_1e64fcf4caf749b9bc2c54577f743edd.jpg');
+}
+
+.face-3 {
+	background-image: url('http://static1.squarespace.com/static/50ca6308e4b0aafbf0e10301/50ca6308e4b0aafbf0e10306/50e67798e4b088804186a3e7/1357281176945/headshots+for+website-22.jpg?format=500w');
+}
+/*testimonials~*/
