@@ -81,61 +81,73 @@ html {
 /*about~*/
 /*testimonials*/
 .testimonials-master-container {
-	border: 1px solid #999;
-	background-color: lightblue;
-	height: 800px;
+
 }
-.testimonials-container {
+.testimonial-info {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	flex-direction: row;
+	flex-direction: column;
 }
 
-.testimonails-title {
-	text-align: center;
-	font-size: 60px;
-	margin-bottom: 50px;
-}
-
-.change-testimonial {	
-	margin-top: 150px;
-	position: absolute;
-	font-size: 100px;
-}
-
-.change-testimonial:hover {
-	cursor: pointer;
-}
-
-.change-testimonial.right {
-	right: 0;
-}
-
-.testomonial-info-container {
-	text-align: center;
-}
-
-.container-2, .container-3 {
+.testimonial-info-2, .testimonial-info-3 {
 	display: none;
 }
 
-.testimonial-face {
-	width: 150px;
-	height: 150px;
-	border-radius: 100%;
+.testimonial-image {
+	width: 200px;
+	height: 200px;
 	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 100%;
 }
 
-.face-1 {
+.image-1 {
+	background-image: url('http://s3-media1.fl.yelpcdn.com/bphoto/kHFXQnNwSJS7OFfqg1UcEg/l.jpg');
+}
+
+.image-2 {
 	background-image: url('http://static1.squarespace.com/static/521cd626e4b07a1dcabda4a2/529a3fb3e4b00e96518f094e/5396b735e4b08d90c13385d5/1461638545775/Nia+HS-132.jpg?format=750w');
 }
 
-.face-2 {
-	background-image: url('http://static.wixstatic.com/media/7b5571_1e64fcf4caf749b9bc2c54577f743edd.jpg/v1/fill/w_284,h_382,al_c,q_80,usm_0.66_1.00_0.01/7b5571_1e64fcf4caf749b9bc2c54577f743edd.jpg');
+.image-3 {
+	background-image: url('http://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7785.jpg');
 }
 
-.face-3 {
-	background-image: url('http://static1.squarespace.com/static/50ca6308e4b0aafbf0e10301/50ca6308e4b0aafbf0e10306/50e67798e4b088804186a3e7/1357281176945/headshots+for+website-22.jpg?format=500w');
+.testimonial-name {
+	font-size: 50px;
+	margin: 50px;
 }
+
+.testimonial-quote {
+	text-align: center;
+	font-size: 35px;
+	width: 600px;
+}
+
+.circle-container {
+	display: flex;
+	justify-content: center;
+}
+.circle {
+	width: 25px;
+	height: 25px;
+	margin: 50px;
+	border: 10px solid #555;
+	border-radius: 100%;
+}
+
 /*testimonials~*/
+/*footer*/
+.footer {
+	background-color: #444;
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	padding: 25 100px;
+
+}
+
+.top:hover {
+	cursor: pointer;
+}
+/*footer~*/
