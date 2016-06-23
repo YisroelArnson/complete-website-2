@@ -180,11 +180,6 @@ html {
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
-	padding: 25px 100px;
-
-}
-
-.top:hover {
-	cursor: pointer;
+	padding: 15px 20px;
 }
 /*footer~*/

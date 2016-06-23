@@ -9,42 +9,40 @@ $(document).ready(function() {
 	var $middleCircle = $testimonialContainer.find('.middle');
 	var $rightCircle = $testimonialContainer.find('.right');
 
-	$circle.on('click', function() {
-		$circle.css('background-color', '#fff');
-		$(this).css('background-color', '#555');
+	checkTestimonial();
+	clearContact();
+	smoothScroll(800);
 
-		$leftCircle.on('click', function() {
-			changeInfo($info1);
-		})
+	function checkTestimonial () {
+		$circle.on('click', function() {
+			$circle.css('background-color', '#fff');
+			$(this).css('background-color', '#555');
 
-		$middleCircle.on('click', function() {
-			changeInfo($info2);
-		})
+			$leftCircle.on('click', function() {
+				changeInfo($info1);
+			})
 
-		$rightCircle.on('click', function() {
-			changeInfo($info3);
-		})
+			$middleCircle.on('click', function() {
+				changeInfo($info2);
+			})
 
-	});
+			$rightCircle.on('click', function() {
+				changeInfo($info3);
+			})
 
+		});
 
-
-
-	function changeInfo(whichId) {
+		function changeInfo(whichId) {
 			$testimonialInfo.css('display', 'none');
-	 		whichId.css('display', 'initial');
-	 		whichId.css('display', 'flex');
+			whichId.css('display', 'initial');
+			whichId.css('display', 'flex');
+		}
 	}
 
-});
-
-
-
-
-$(document).ready(function() {
+	function clearContact() {
 	var	$inputContainer = $('.contact-input-container');
 	var $inputs =  $inputContainer.find('input');
-	
+
 	$inputs.on('focus', function() {
 		var $this = $(this);
 		$this.val('');
@@ -53,4 +51,21 @@ $(document).ready(function() {
 			$this.val(value);
 		});
 	});
-});
+	}
+
+
+	function smoothScroll (duration) {
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, duration);
+	    }
+	});
+	}
+
+});	
