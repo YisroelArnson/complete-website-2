@@ -31,11 +31,26 @@ $(document).ready(function() {
 
 
 	function changeInfo(whichId) {
-			console.log(whichId)
 			$testimonialInfo.css('display', 'none');
-
 	 		whichId.css('display', 'initial');
 	 		whichId.css('display', 'flex');
 	}
 
+});
+
+
+
+
+$(document).ready(function() {
+	var	$inputContainer = $('.contact-input-container');
+	var $inputs =  $inputContainer.find('input');
+	
+	$inputs.on('focus', function() {
+		var $this = $(this);
+		$this.val('');
+		$this.keyup(function() {
+			var value = $this.val();
+			$this.val(value);
+		});
+	});
 });

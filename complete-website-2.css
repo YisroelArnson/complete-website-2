@@ -81,7 +81,14 @@ html {
 /*about~*/
 /*testimonials*/
 .testimonials-master-container {
+	background-color: #eee;
+	text-align: center;
+	height: 800px;
+}
 
+.testimonials-master-container h1 {
+	font-size: 60px;
+	font-weight: 900;
 }
 .testimonial-info {
 	display: flex;
@@ -136,7 +143,37 @@ html {
 	border-radius: 100%;
 }
 
+.left {
+	background-color: #555;
+}
+
 /*testimonials~*/
+/*contact*/
+.contact h1 {
+	text-align: center;
+	font-size: 60px;
+	font-weight: 900;
+}
+
+.contact .inputs {
+	border: 1px solid #4B77BE;
+	margin: 50px 150px;
+	width: 20%;
+	height: 10%;
+}
+
+.contact-input-container .top {
+	display: inline-block;
+	text-align: center;
+
+}
+
+.contact-input-container .bottom {
+	width: 70%;
+	height: 40%
+
+}
+/*contact~*/
 /*footer*/
 .footer {
 	background-color: #444;
