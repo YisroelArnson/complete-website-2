@@ -51,6 +51,13 @@ html {
 	font-size: 30px;
 	font-weight: 100;
 }
+
+
+@media screen and (max-width: 1320px) {
+	.banner .title {
+		font-size: 100px;
+	}
+}
 /*banner~*/
 /*about*/
 .about {
@@ -149,29 +156,26 @@ html {
 
 /*testimonials~*/
 /*contact*/
-.contact h1 {
+.contact {
 	text-align: center;
+}
+.contact h1 {
 	font-size: 60px;
 	font-weight: 900;
 }
 
 .contact .inputs {
+	text-align: center;
 	border: 1px solid #4B77BE;
-	margin: 50px 150px;
+	margin: 50px;
 	width: 20%;
 	height: 10%;
 }
 
-.contact-input-container .top {
-	display: inline-block;
-	text-align: center;
-
-}
-
 .contact-input-container .bottom {
+	text-align: left;
 	width: 70%;
-	height: 40%
-
+	height: 40%;
 }
 /*contact~*/
 /*footer*/
